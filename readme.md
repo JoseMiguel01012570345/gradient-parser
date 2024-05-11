@@ -57,7 +57,7 @@ The next step is divided into two posible cases:
         
         b ) If a reduction is made we remove  from stack all of the terminals that reminds whether the pointer position to the top of the stack and the new pointer is the top of the stack pointer , let it be $\epsilon$ , then do $GOTO(\sigma X|\beta , \beta ,\epsilon )$ and step over step 2. 
    
-        c ) If no reduction was made then do $GOTO(\sigma \alpha|\beta , \alef , \beta)$ , where $\alef \in T$ and it's position is $\alef$.position = $\sigma$.position $-$ look_ahead $+$ $i_k$ and step over step 2.
+        c ) If no reduction was made then do $GOTO(\sigma \alpha|\beta , \alef , \beta)$ , where $\pi \in T$ and it's position is $\pi$.position = $\sigma$.position $-$ look_ahead $+$ $i_k$ and step over step 2.
 
         d) If we reach the top of stack pointer, we move the top of the stack pointer to the position ($\sigma$.position $-$ look_ahead) and step over step 2
 
