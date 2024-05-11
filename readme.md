@@ -41,7 +41,7 @@ A state is of the form $(\sigma|\beta w , pivote , pointer )$ where $\sigma,\bet
 The transition functions is $GOTO( s )$ where $s$ is posible states
 
 Step 1: Add special symbols
-- Adds two special symbols that allows walking thougth the string. Let $s$ be the string then convert to $\@\$ S \$ $ where $\$$ always peforms `shift` action if and only if a pivote is not $\$$ , in such case it preforms `reduce` action , otherwise $\#$ always peforms `shift` action , the last $\$$ symbol peforms reduce action whenever $\#$ is not a pointer.
+- Adds two special symbols that allows walking thougth the string. Let $s$ be the string then convert to # $ S $ where $ always peforms `shift` action if and only if a pivote is not $ , in such case it preforms `reduce` action , otherwise # always peforms `shift` action , the last $\$$ symbol peforms reduce action whenever # is not a pointer.
 
 Step 2: Find out action
 
@@ -63,7 +63,7 @@ The next step is divided into two posible cases:
 
 Step 4: check final state
 
-- If we reach the state $\@ \$S \$ |, \epsilon , \{\#, \$ \}$ , where $\epsilon$ indicates no string  , it means  we have finished and the string belongs to the language
+- If we reach the state $\# \$S \$ |, \epsilon , \{\#, \$ \}$ , where $\epsilon$ indicates no string  , it means  we have finished and the string belongs to the language
 
 Can be guarateed that we won't iterate forever because # symbol helps to walk forward in the string in case we reach such symbol while trying to reduce.
 
