@@ -63,7 +63,7 @@ The next step is divided into two posible cases:
 
 Step 4: check final state
 
-- If we reach the state $\# \$S \$ |, \epsilon , \{\#, \$ \}$ , where $\epsilon$ indicates no string  , it means  we have finished and the string belongs to the language
+- If we reach the state $\# \$S \$ |, $\epsilon$ , { #, $ } , where $\epsilon$ indicates no string  , it means  we have finished and the string belongs to the language
 
 Can be guarateed that we won't iterate forever because # symbol helps to walk forward in the string in case we reach such symbol while trying to reduce.
 
